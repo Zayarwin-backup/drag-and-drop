@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: #333;
+  margin-top: 1rem;
+  padding: 15px;
+}
+.dropabble,
+.dragable {
+  width: 100%;
+  margin-top: 10px;
+  background-color: red;
+  position: relative;
+}
+.dragable {
+  background-color: white;
+  padding: 10px;
+}
+
+.dragging {
+  opacity: 0.1;
+}
+
+.dragging::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
